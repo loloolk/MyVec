@@ -1,0 +1,1 @@
+My version of a vector class in c++. The functions are similar to the Rust vector structure.
