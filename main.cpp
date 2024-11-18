@@ -1,9 +1,13 @@
 #include <iostream>
-#include <omp.h>
+#include "MyVec.cpp"
 
 int main() {
-    for (int i = 0; i < 10000; i++) {
-        std::cout << i << std::endl;
+
+    MyVec<int> vec = MyVec<int>(1000);
+    for (int i = 0; i < 998; i++) {
+        vec.push(i);
     }
+    std::cout << vec.get(999) << std::endl;
+
     return 0;
 }
